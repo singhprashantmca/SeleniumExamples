@@ -6,7 +6,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Locators2 
+public class LocatorsDemo
 {
 
 	public static void main(String[] args) throws InterruptedException
@@ -15,7 +15,7 @@ public class Locators2
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5));
 		
-		String password= Locators2.getPassword(driver);
+		String password= LocatorsDemo.getPassword(driver);
 		
 		driver.get("https://rahulshettyacademy.com/locatorspractice/");
 		driver.findElement(By.id("inputUsername")).sendKeys("PrashantSingh@gmail.com");
